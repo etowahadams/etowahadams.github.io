@@ -1,0 +1,43 @@
+{{/* Enable video to be loaded from local page dir or media library at `static/img/`. */}}
+{{ $path := "" }}
+{{ $root_dir := "" }}
+{{ if .Get "library" }}
+  {{ $path = "img/" }}
+  {{ $root_dir = "static/" }}
+{{ end }}
+
+{{ $video := .Get "src" }}
+{{ $video_type := strings.TrimPrefix "." (path.Ext (.Get "src")) }}
+
+
+{{ $poster := printf "%s%s%s" $path (substr (.Get "src") 0 -4) ".jpg" }}
+{{ $has_poster := fileExists (printf "%s%s" $root_dir $poster) }}
+{{ if and $has_poster (.Get "library") }}
+  {{ $poster = $poster | relURL }}
+{{ else if $has_poster }}
+  {{ $poster = $poster }}
+{{ else }}
+  {{ $poster = "" }}
+{{ end }}
+
+{{/* Get caption. Support legacy `title` option. */}}
+{{ $caption := .Get "title" | default (.Get "caption") | default "" }}
+
+
+
+<figure>
+
+
+<video {{if (.Get "controls")}}controls{{else}}autoplay loop{{end}} {{if (.Get "loop")}} loop {{end}}{{with $poster}}poster="{{.}}"{{end}}width="100%" preload="auto">
+  <source src="{{ $video }}" type="video/{{$video_type}}">
+</video>
+
+{{ if $caption }}
+  {{/* Localize the figure numbering (if enabled). */}}
+  {{ $figure := split (i18n "figure" | default "Figure %d:") "%d" }}
+  <figcaption{{ if eq (.Get "numbered") "true" }} data-pre="{{ index $figure 0 }}" data-post="{{ index $figure 1 }}" class="numbered"{{ end }} style="text-align:left">
+    {{ $caption | markdownify | emojify }}
+  </figcaption>
+{{ end }}
+
+</figure>
