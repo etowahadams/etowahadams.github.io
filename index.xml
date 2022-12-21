@@ -1,0 +1,177 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Etowah Adams</title><link>https://etowahadams.github.io/</link><description>Recent content on Etowah Adams</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://etowahadams.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Reclassifying Het Groups as Ligands in Schrödinger Maestro</title><link>https://etowahadams.github.io/post/2020-08-15-het-to-ligand/</link><pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate><guid>https://etowahadams.github.io/post/2020-08-15-het-to-ligand/</guid><description>
+&lt;p>&lt;em>I did some ligand docking this summer using Schrödinger. I couldn&amp;rsquo;t find instructions on how to reclassify a het group as a ligand in Maestro, so had to figure it out. What I did is documented here.&lt;/em>&lt;/p>
+&lt;p>When you import a structure of a protein bound to a ligand from &lt;a href="https://www.rcsb.org/">PDB&lt;/a>, often the ligand isn&amp;rsquo;t recognized as a ligand by &lt;a href="https://www.schrodinger.com/maestro">Maestro&lt;/a>, Schrödinger&amp;rsquo;s ligand docking software. This is problematic because then there&amp;rsquo;s no ligand to select when generating a grid for ligand docking. Here are instructions on how to turn the het group into a ligand. I&amp;rsquo;m running Schrödinger 2020-2 on Windows 10.&lt;/p>
+&lt;ol>
+&lt;li>Find the het group in the structure hierarchy and extract it to a new entry
+&lt;figure>
+&lt;a data-fancybox="" href="select-het-group.jpeg" >
+&lt;img src="select-het-group.jpeg" data-src="select-het-group.jpeg" class="lazyload" alt="" >&lt;/a>
+&lt;/figure>&lt;/li>
+&lt;li>You should see a new entry in the entry list. Select it and go to &lt;strong>Edit -&amp;gt; 2D Sketcher&lt;/strong>. Click on the &amp;ldquo;Save as New..&amp;rdquo; button at the bottom.
+&lt;figure>
+&lt;a data-fancybox="" href="save-as-new.jpeg" >
+&lt;img src="save-as-new.jpeg" data-src="save-as-new.jpeg" class="lazyload" alt="" >&lt;/a>
+&lt;/figure>
+As long the new stucture is under 130 atoms, it should be listed as a ligand now.
+&lt;figure>
+&lt;a data-fancybox="" href="new-structure.jpeg" >
+&lt;img src="new-structure.jpeg" data-src="new-structure.jpeg" class="lazyload" alt="" >&lt;/a>
+&lt;/figure>&lt;/li>
+&lt;li>Select the new (ligand) stucture and the full protein structure in your workspace. Right click and merge them together.
+&lt;figure>
+&lt;a data-fancybox="" href="select-both.jpeg" >
+&lt;img src="select-both.jpeg" data-src="select-both.jpeg" class="lazyload" alt="" >&lt;/a>
+&lt;/figure>&lt;/li>
+&lt;li>Select the merged structure. You should see your het group listed as a ligand now.
+&lt;figure>
+&lt;a data-fancybox="" href="merged.jpeg" >
+&lt;img src="merged.jpeg" data-src="merged.jpeg" class="lazyload" alt="" >&lt;/a>
+&lt;/figure>&lt;/li>
+&lt;/ol>
+&lt;p>One of the potential downsides of this approach is that the exact conformation of the ligand is not preserved. This does not impact the grid generation, but if you want to compare the docked ligand to the original ligand, make sure that you&amp;rsquo;re comparing it to the ligand that was not extracted and merged. If you want to preserve the exact conformation, I recommend editing the PDB file of the extracted ligand.&lt;/p></description></item><item><title>Leaf color change in 10,950 iNaturalist observations</title><link>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</link><pubDate>Thu, 09 Jan 2020 21:19:07 -0500</pubDate><guid>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</guid><description>
+&lt;figure>
+&lt;a data-fancybox="" href="process.jpg" data-caption="Process overview. Skip to process explanation">
+&lt;img src="process.jpg" data-src="process.jpg" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+Process overview. &lt;a href="#process">Skip to process explanation&lt;/a>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>One of the unexpected consequences of attending college in Connecticut has been experiencing autumn twice a year. I watch the trees of New Haven&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> change color during late October and early November, then return home in Georgia for fall break and watch the leaves change color again.&lt;/p>
+&lt;p>I understood the basic principle behind my double-dipping of fall. In late October, Connecticut is colder and receives less daylight hours than my home in Georgia, triggering trees stop making green chlorophyll and allowing the yellows, oranges, and reds of the other pigments (like xanthophylls, carotenoids, and anthocyanins) to become visible earlier. However, I began to wonder when autumn came to other parts of North America, and the rate that it moved. I have seen fall color forecasts. But what would it look like actually to observe leaf color change across the whole continent? I decided to tackle this question over my winter break.&lt;/p>
+&lt;p>Having been a contributor for several years now, I turned to &lt;a href="https://www.inaturalist.org/">iNatrualist&lt;/a> for answers. For the uninitiated, iNaturalist is a website where users can submit and identify observations of any taxa of life: a social media for naturalists in a sense. I had three qualifications choosing a tree species. It had to have a drastic fall color change, a large range, and many observations. After considering Sugar Maple, (&lt;em>Acer saccharum&lt;/em>), Sassafras (&lt;em>Sassafras albidum&lt;/em>), Trembling Aspen (&lt;em>Populus tremuloides&lt;/em>), among other trees, I finally decided on &lt;a href="https://www.inaturalist.org/taxa/48098-Acer-rubrum">Red Maple&lt;/a> (&lt;em>Acer rubrum&lt;/em>), which had the highest observation count.&lt;/p>
+&lt;h2 id="results">
+&lt;a href="#results" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Results
+&lt;/h2>
+&lt;figure>
+&lt;video autoplay loop width="100%" preload="auto">
+&lt;source src="2019.mp4" type="video/mp4">
+&lt;/video>
+&lt;figcaption style="text-align:left">
+&lt;strong>Figure 1:&lt;/strong> 2019 research grade observations of &lt;em>A. rubrum&lt;/em> with leaves. The color of each marker corresponds to the dominant color of the leaves in the respective observation. Each marker disappears 10 days (frames) after it first appears. At the end of April, observations get green as trees “green up,” and fall colors start appearing at the start of October and spread south.
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;a data-fancybox="" href="observation-count.jpg" data-caption="Figure 2 (left): Number of observations of A. rubrum versus week of the year. At the 17th week (around the 4th week of April) there is a sharp spike in the number of observations. I expect this to be when the first leaves first start coming out and everyone is submitting their first A. rubrum observation of the year. Figure 3 (right): Number of observations with leaves versus week of the year. As expected, there is not much difference between figure 2 and figure 3. People usually submit observations with leaves in them. However, notice that in weeks 1-16, there less observations compared to in figure 2, suggesting that the spike of observations at week 17 is because of the emergence of leaves. Still, the peak is remarkably high.">
+&lt;img src="observation-count.jpg" data-src="observation-count.jpg" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+&lt;strong>Figure 2 (left)&lt;/strong>: Number of observations of A. rubrum versus week of the year. At the 17th week (around the 4th week of April) there is a sharp spike in the number of observations. I expect this to be when the first leaves first start coming out and everyone is submitting their first &lt;em>A. rubrum&lt;/em> observation of the year. &lt;strong>Figure 3 (right)&lt;/strong>: Number of observations with leaves versus week of the year. As expected, there is not much difference between figure 2 and figure 3. People usually submit observations with leaves in them. However, notice that in weeks 1-16, there less observations compared to in figure 2, suggesting that the spike of observations at week 17 is because of the emergence of leaves. Still, the peak is remarkably high.
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;video autoplay loop width="100%" preload="auto">
+&lt;source src="allyears.mp4" type="video/mp4">
+&lt;/video>
+&lt;figcaption style="text-align:left">
+&lt;strong>Figure 4&lt;/strong>: 2016, 2017, 2018, and 2019 research grade observations of &lt;em>A. rubrum&lt;/em> with leaves. 2015 omitted so that a nice square could be made
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;a data-fancybox="" href="fall-colors.jpg" data-caption="Figure 5: Number of observations with “fall” colors in each week of the year for 2015-2019. “Fall” color was defined in an HSV color model as colors with a hue (0-360) &amp;gt; 300 or &amp;lt; 60, a saturation (0-1) &amp;gt; 0.09, and a value (0-255) &amp;gt; 150. Peaks are present at week 17, and weeks 41-44. Week 17 is overrepresented because of the number of total observations in that week, but early leaves can be reddish. Interestingly the 2018 fall colors appear to be about two weeks later as a whole compared to 2019. The late 2018 fall was observed by others, and was attributed to higher than average daily low temperatures.">
+&lt;img src="fall-colors.jpg" data-src="fall-colors.jpg" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+&lt;strong>Figure 5&lt;/strong>: Number of observations with “fall” colors in each week of the year for 2015-2019. “Fall” color was defined in an HSV color model as colors with a hue (0-360) &amp;gt; 300 or &amp;lt; 60, a saturation (0-1) &amp;gt; 0.09, and a value (0-255) &amp;gt; 150. Peaks are present at week 17, and weeks 41-44. Week 17 is overrepresented because of the number of total observations in that week, but early leaves can be reddish. Interestingly the 2018 fall colors appear to be about two weeks later as a whole compared to 2019. The late 2018 fall was observed by &lt;a href="https://weather.com/science/weather-explainers/news/2018-10-03-why-foliage-fall-color-is-late-warm-east">others&lt;/a>, and was attributed to higher than average daily low temperatures.
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="process">
+&lt;a href="#process" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Process
+&lt;/h2>
+&lt;p>I painstakingly looked through the images of all 10,000+ observations and wrote down each the color of the leaves in each observation.&lt;/p>
+&lt;p>Just kidding.&lt;/p>
+&lt;h3 id="leaf-detection">
+&lt;a href="#leaf-detection" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Leaf Detection
+&lt;/h3>
+&lt;p>An observation’s images could contain branches, buds, bark, roots, seeds, and any number of other features to help with identification. So, I knew I had to detect if there was a leaf in in the image, and where the leaf was in the image. In other words, I was dealing with object detection. I chose a deep learning approach, You Look Only Once (YOLO), for object detection because of its speed and good documentation.&lt;/p>
+&lt;p>Using the &lt;a href="https://api.inaturalist.org/v1/docs/">iNatrualist API&lt;/a>, I downloaded the images from every 10th page of research grade &lt;em>A. rubrum&lt;/em> observations. I created a training set by labeling the leaves in 800 images using LabelImg and trained the model for 3500 batches (around 16 hours on my computer). In hindsight, I could have had even better accuracy if I had created additional classes for other features like branches and seeds, but overall, I am pleased with the performance of the model. There are several instances where it identified very small leaves, getting more sky than leaf, resulting several blue to white dominant color however. See the object detector on &lt;a href="https://github.com/etowahs/leaf-detector">Github&lt;/a>.&lt;/p>
+&lt;figure>
+&lt;a data-fancybox="" href="leaf-detection.jpg" data-caption="Figure 6: Leaves detected by YOLOv3 object detector trained on 800 labeled images">
+&lt;img src="leaf-detection.jpg" data-src="leaf-detection.jpg" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+&lt;strong>Figure 6&lt;/strong>: Leaves detected by YOLOv3 object detector trained on 800 labeled images
+&lt;/figcaption>
+&lt;/figure>
+&lt;h3 id="leaf-color">
+&lt;a href="#leaf-color" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Leaf Color
+&lt;/h3>
+&lt;p>Once I knew where the leaf was, I expected getting the leaf color to be easy, but it required more experimentation than I expected. At first, I tried to get the color of the leaf without doing any additional manipulation to the leaf sub-image. I used k-means clustering to get the dominant color of the image. I was surprised by how well k = 3 performed, but I thought I could get an even better color if I extracted the foreground.&lt;/p>
+&lt;figure>
+&lt;a data-fancybox="" href="domcolor.jpg" data-caption="Figure 7: Dominant color using k-means clustering.">
+&lt;img src="domcolor.jpg" data-src="domcolor.jpg" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+&lt;strong>Figure 7&lt;/strong>: Dominant color using k-means clustering.
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>I tried a variety of methods, including creating masks from the largest contour provided by canny edge detection and adaptive thresholding, but with limited success. Eventually I stumbled upon the grabcut algorithm, which performed miles better than anything I had come up with.&lt;/p>
+&lt;figure>
+&lt;a data-fancybox="" href="adaptive-thresholding2.jpg" data-caption="Figure 8: Foreground extraction using mask created with the largest contour found using adaptive thresholding. Not terrible, but also not good.">
+&lt;img src="adaptive-thresholding2.jpg" data-src="adaptive-thresholding2.jpg" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+&lt;strong>Figure 8&lt;/strong>: Foreground extraction using mask created with the largest contour found using adaptive thresholding. Not terrible, but also not good.
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;a data-fancybox="" href="grabcut.jpg" data-caption="Figure 9: Foreground extraction using grabcut, followed by k-means clustering (k = 2) of the foreground. Much better.">
+&lt;img src="grabcut.jpg" data-src="grabcut.jpg" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+&lt;strong>Figure 9&lt;/strong>: Foreground extraction using grabcut, followed by k-means clustering (k = 2) of the foreground. Much better.
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Grabcut worked well for leaves with defined edges, but for leaves with less defined leaf edges, sometimes it would cut out the entire foreground, which in case I would get the dominant color of the entire leaf sub-image. When an observation had multiple leaves, I got the dominant color (k = 2) of the dominant colors of each of the leaves. If I were to do it over, I would have combined the extracted leaf foregrounds into the same array, and taken the dominant color of that.&lt;/p>
+&lt;p>Once I got the main image processing pipeline set up, I ran it on the images with leaves in them for all the observations of &lt;em>A. rubrum&lt;/em> between 2015-2019. See it on &lt;a href="https://github.com/etowahs/leaf-colors">Github&lt;/a>.&lt;/p>
+&lt;h2 id="creating-the-graphics">
+&lt;a href="#creating-the-graphics" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Creating the Graphics
+&lt;/h2>
+&lt;p>I initially created a map using leaflet.js but animating the markers was not smooth enough for my liking. Instead, for every day in each year I generated an SVG image. These images were combined into a gif, using Imagemagick, and then converted into a mp4 using ffmpeg. For a future project, I would like to try something with CSS sprite sheet animation, d3.js, or maybe even three.js, but for a long animation like this one, I think the gif was appropriate and is very sharable.&lt;/p>
+&lt;h2 id="concluding-thoughts">
+&lt;a href="#concluding-thoughts" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Concluding Thoughts
+&lt;/h2>
+&lt;p>I found it fascinating to see leaf colors change across eastern North America. Observations are increasing every year so this type of visualization will only get better, although certainly they will be skewed towards certain geographic areas and time periods. Users tend to submit observations when they notice something different, so data mostly comes from periods of transitions. I was happy to see that the &lt;a href="https://www.washingtonpost.com/weather/2018/10/19/weve-never-seen-anything-like-this-fall-foliage-still-missing-action-across-mid-atlantic/">late timing of fall colors of 2018&lt;/a> was reflected in figure 5.&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>See this cool &lt;a href="https://uri.yale.edu/maps/street-tree-inventory-map">map&lt;/a> of New Haven trees by Yale Urban Resource Initiative&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>
