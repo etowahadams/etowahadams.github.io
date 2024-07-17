@@ -7,16 +7,15 @@ categories:
 - molecular biology
 - metascience
 ---
-
 Molecular cloning: it is a ubiquitous and essential molecular biology technique, yet it’s the bane of many a scientist's existence. If you've ever overheard a biologist muttering curses at a petri dish, chances are their cloning has gone wrong.
+
+{{< figure src="meme.png" caption="A common cloning experience." >}}
 
 Don't believe me? Let's take a peek at the [r/labrats](https://www.reddit.com/r/labrats/) subreddit, where desperate researchers bare their souls:
 
-“[For cloning, the most reliable method is a contract with a demon, higher the better.”](https://www.reddit.com/r/labrats/comments/15sow73/comment/jwfj80q/?utm_source=share&utm_medium=web2x&context=3)
-
-"[But of course the gods of cloning have different ideas about my free time. None of the reactions, even the control one, succeed.](https://www.reddit.com/r/labrats/comments/11hwtol/i_just_feel_defeated/)”
-
-“[Cloning, like most of molecular biology is black magic. I've never met more superstitious people then molecular biologists, and seemingly the more superstitious the better they were in the lab.](https://www.reddit.com/r/labrats/comments/pclq17/comment/hajvgst/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)”
+- “[For cloning, the most reliable method is a contract with a demon, higher the better.”](https://www.reddit.com/r/labrats/comments/15sow73/comment/jwfj80q/?utm_source=share&utm_medium=web2x&context=3)
+- "[But of course the gods of cloning have different ideas about my free time. None of the reactions, even the control one, succeed.](https://www.reddit.com/r/labrats/comments/11hwtol/i_just_feel_defeated/)”
+- “[Cloning, like most of molecular biology is black magic. I've never met more superstitious people then molecular biologists, and seemingly the more superstitious the better they were in the lab.](https://www.reddit.com/r/labrats/comments/pclq17/comment/hajvgst/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)”
 
 Nothing says "doing science" quite like demonic bargaining, right?
 
@@ -71,7 +70,7 @@ In lieu of perfect predictability, scientists have come up with many "[rules](ht
 
 The problem? Not all, but many rules are context- and host-dependent and only become apparent after years of experience. Current plasmid design systems (Benchling, SnapGene) incorporate some basic rule-checking, but they can't account for the diversity of sequences that scientists want to clone. Instead, the state of the art in plasmid design error-checking is to copy and paste your plasmid into various web servers to predict things about your plasmid, and to have your most experienced cloning guru look over your design—bless them.
 
-{{< figure src="fig1.png" caption="Each failure state could have been caused by one of many errors. Note this diagram does not aim to be comprehensive." >}}
+{{< figure src="fig2.png" caption="Each failure state could have been caused by one of many errors. Note this diagram does not aim to be comprehensive." >}}
 
 ## The future of cloning
 
@@ -106,7 +105,7 @@ Some other cloning-related odds and ends that may be of interest:
 
 Thank you to Laura Quinto and Chase Armer for looking over drafts of this piece and providing feedback.
 
-## **Other similar essays I enjoyed**
+## Other similar essays I enjoyed
 
 - [Too much Tacit](https://twitter.com/koeng101/status/1793123441882902798) (Keoni Gandall)
 - [Why is machine learning 'hard'?](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html) (S. Zayd Enam)
