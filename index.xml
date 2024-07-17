@@ -1,4 +1,177 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Etowah Adams</title><link>https://etowahadams.github.io/</link><description>Recent content on Etowah Adams</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 09 Jan 2020 21:19:07 -0500</lastBuildDate><atom:link href="https://etowahadams.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Leaf color change in 10,950 iNaturalist observations</title><link>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</link><pubDate>Thu, 09 Jan 2020 21:19:07 -0500</pubDate><guid>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Etowah Adams</title><link>https://etowahadams.github.io/</link><description>Recent content on Etowah Adams</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 16 Jul 2024 08:19:07 -0500</lastBuildDate><atom:link href="https://etowahadams.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Molecular cloning, or why some biologists become superstitious</title><link>https://etowahadams.github.io/post/2024-07-17-cloning/</link><pubDate>Tue, 16 Jul 2024 08:19:07 -0500</pubDate><guid>https://etowahadams.github.io/post/2024-07-17-cloning/</guid><description>
+&lt;p>Molecular cloning: it is a ubiquitous and essential molecular biology technique, yet it’s the bane of many a scientist&amp;rsquo;s existence. If you&amp;rsquo;ve ever overheard a biologist muttering curses at a petri dish, chances are their cloning has gone wrong.&lt;/p>
+&lt;figure>
+&lt;a data-fancybox="" href="meme.png" data-caption="A common cloning experience">
+&lt;img src="meme.png" data-src="meme.png" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+A common cloning experience
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Don&amp;rsquo;t believe me? Let&amp;rsquo;s take a peek at the &lt;a href="https://www.reddit.com/r/labrats/">r/labrats&lt;/a> subreddit, where desperate researchers bare their souls:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>“&lt;a href="https://www.reddit.com/r/labrats/comments/15sow73/comment/jwfj80q/?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3">For cloning, the most reliable method is a contract with a demon, higher the better.”&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&amp;ldquo;&lt;a href="https://www.reddit.com/r/labrats/comments/11hwtol/i_just_feel_defeated/">But of course the gods of cloning have different ideas about my free time. None of the reactions, even the control one, succeed.&lt;/a>”&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“&lt;a href="https://www.reddit.com/r/labrats/comments/pclq17/comment/hajvgst/?utm_source=share&amp;amp;utm_medium=web3x&amp;amp;utm_name=web3xcss&amp;amp;utm_term=1&amp;amp;utm_content=share_button">Cloning, like most of molecular biology is black magic. I&amp;rsquo;ve never met more superstitious people then molecular biologists, and seemingly the more superstitious the better they were in the lab.&lt;/a>”&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Nothing says &amp;ldquo;doing science&amp;rdquo; quite like demonic bargaining, right?&lt;/p>
+&lt;p>Even when you think you’ve emerged triumphant from your cloning, there’s a good chance you haven’t. In a recent analysis of 2,521 plasmids constructed by researchers and sent to molecular cloning company VectorBuilder, &lt;a href="https://www.biorxiv.org/content/10.1101/2024.06.17.596931v1">nearly half contained errors&lt;/a> compared to the reference sequence. Abysmal. (if you’re reading this and know of other interesting cloning related studies, let me know!)&lt;/p>
+&lt;p>To be fair, cloning isn’t the only dark art in molecular biology. One study finds human-designed &lt;a href="https://www.biorxiv.org/content/10.1101/2021.08.12.455589v1.full">PCR fails 37-45% of the time&lt;/a>. A study investigating how well 2165 recombinant human proteins express in hamster cells found that &lt;a href="https://www.biorxiv.org/content/10.1101/2022.12.12.520152v1?s=09">41% of human proteins did not have detectable expression&lt;/a>. Perhaps I will think more extensively about these other methods in the future. But I suspect learning from cloning will provide insight into these others too.&lt;/p>
+&lt;p>Why does cloning make biologists contemplate career changes? And does it have to be this way?&lt;/p>
+&lt;h2 id="cloning-101">
+&lt;a href="#cloning-101" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Cloning 101
+&lt;/h2>
+&lt;p>First, a little background. Molecular cloning is the process of assembling pieces of DNA into a circle (a plasmid) that can replicate inside a host organism. It&amp;rsquo;s the first step in many critical tasks, from protein production to gene editing. The process looks like this:.&lt;/p>
+&lt;ol>
+&lt;li>Design your plasmid&lt;/li>
+&lt;li>Assemble DNA fragments&lt;/li>
+&lt;li>Transform host cells with the assembled DNA&lt;/li>
+&lt;li>Identify clonal colonies with the correctly assembled plasmid&lt;/li>
+&lt;/ol>
+&lt;p>End to end, this process should take just a few days. Emphasis on should.&lt;/p>
+&lt;h2 id="plagued-by-uninformative-latent-failure">
+&lt;a href="#plagued-by-uninformative-latent-failure" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Plagued by uninformative latent failure
+&lt;/h2>
+&lt;p>Unfortunately, cloning outcomes can be quite variable, even for experienced practitioners. Sometimes it works flawlessly on the first try, leaving you feeling like a real scientist. Other times, it works once but refuses to cooperate ever again. And then there are those dark times when it stubbornly fails, again and again for weeks, leaving you with no choice but to sacrifice your first-born child. Wait, are we still talking about cloning?&lt;/p>
+&lt;p>When cloning fails, it&amp;rsquo;s not very forthcoming about why. There are only a few observable failure states:&lt;/p>
+&lt;ol>
+&lt;li>Cells with incorrect plasmids (misassembled, mutated, or containing part/backbone plasmids)&lt;/li>
+&lt;li>No cells growing at all&lt;/li>
+&lt;/ol>
+&lt;p>That&amp;rsquo;s all the feedback you get. Each failure could be the result of any number of different errors. I call this uninformative failure.&lt;/p>
+&lt;p>Another thing to notice is that failure is observed far after a potential error is made. This is called latent failure. You have to carry out the whole process to see if you did something wrong, making debugging cycles take forever.&lt;/p>
+&lt;figure>
+&lt;a data-fancybox="" href="fig1.png" data-caption="Latent failure of cloning">
+&lt;img src="fig1.png" data-src="fig1.png" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+Latent failure of cloning
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="debugging-execution-and-design-errors">
+&lt;a href="#debugging-execution-and-design-errors" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Debugging execution and design errors
+&lt;/h2>
+&lt;p>So what do you do when your cloning has failed? The typical advice is:&lt;/p>
+&lt;ol>
+&lt;li>Do it again (and add a positive control this time, you rookie)&lt;/li>
+&lt;li>Order new reagents or use a different kit (because clearly, it&amp;rsquo;s the reagents&amp;rsquo; fault, not yours)&lt;/li>
+&lt;li>Check your fragments and regenerate your input sample (just in case)&lt;/li>
+&lt;li>&lt;a href="https://bakingbiologist.wordpress.com/2012/10/05/starting-grad-school-trust-nobody/">Trust nobody&lt;/a> (not even yourself)&lt;/li>
+&lt;/ol>
+&lt;p>With experience, you become better at catching execution errors, and you can develop intuitions which can help you narrow down what follow up conditions to try.&lt;/p>
+&lt;p>But even if you execute protocols perfectly, your cloning can still fail. Why? Because sometimes, the very DNA you&amp;rsquo;re trying to clone is the problem.&lt;/p>
+&lt;p>Cloning involves introducing new DNA sequences into a host organism. But the protein you&amp;rsquo;re trying to clone might be toxic to the host, or the DNA might contain hidden elements that produce unexpected, harmful products (called &lt;a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0136396">cryptic genetic elements&lt;/a>), or the plasmid may contain sequences such as repeats that make it unstable. Even for hosts like &lt;em>E. coli&lt;/em>, we can&amp;rsquo;t always predict whether it will tolerate a particular DNA sequence.&lt;/p>
+&lt;p>In lieu of perfect predictability, scientists have come up with many &amp;ldquo;&lt;a href="https://pubmed.ncbi.nlm.nih.gov/16472168/">rules&lt;/a>&amp;rdquo; for designing plasmids and DNA fragments. Use tightly regulated expression systems! Reduce repetitive regions! Use efficient overhangs! For beginners to cloning, understanding why these rules exist by unintentionally violating them is almost a rite of passage. I know it was for me.&lt;/p>
+&lt;p>The problem? Not all, but many rules are context- and host-dependent and only become apparent after years of experience. Current plasmid design systems (Benchling, SnapGene) incorporate some basic rule-checking, but they can&amp;rsquo;t account for the diversity of sequences that scientists want to clone. Instead, the state of the art in plasmid design error-checking is to copy and paste your plasmid into various web servers to predict things about your plasmid, and to have your most experienced cloning guru look over your design—bless them.&lt;/p>
+&lt;figure>
+&lt;a data-fancybox="" href="fig2.png" data-caption="Each failure state could have been caused by one of many errors. Note this diagram does not aim to be comprehensive.">
+&lt;img src="fig2.png" data-src="fig2.png" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+Each failure state could have been caused by one of many errors. Note this diagram does not aim to be comprehensive.
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="the-future-of-cloning">
+&lt;a href="#the-future-of-cloning" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+The future of cloning
+&lt;/h2>
+&lt;p>Faced with these challenges, some biologists are turning to alternative methods. &amp;ldquo;&lt;a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0653-x">Cloning-free&lt;/a>&amp;rdquo; techniques, outsourcing to companies (Genscript, VectorBuilder, Twist), and &amp;ldquo;&lt;a href="https://fnkprddata.blob.core.windows.net/domestic/data/datasheet/ORC/MS0011-A.pdf">cell-free cloning&lt;/a>&amp;rdquo; are all attempts to avoid the dreaded cloning.&lt;/p>
+&lt;p>But in many cases, cloning simply must be done. What can be done to make it less potentially painful? Here are a few ideas:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Reducing execution variance&lt;/strong>: Ideally, you would never have to question whether something went wrong due to human execution error. One development in this vein is &lt;a href="https://telesisbio.com/products/bioxp-system/bioxp-3250-system/">benchtop cloning automation&lt;/a>, although at $25,000 I’m not sure how appealing it is to labs. For the price of two of those you could hire a human cloning machine—a grad student.&lt;/li>
+&lt;li>&lt;strong>Predictive modeling&lt;/strong>: We need better models to predict how DNA sequences will behave in host organisms. Many already exist, for example &lt;a href="https://www.nature.com/articles/s41467-022-32829-5">transcription&lt;/a> and &lt;a href="https://pubmed.ncbi.nlm.nih.gov/21601672/">translation&lt;/a> prediction in &lt;em>E. coli&lt;/em>, and we need to use them more. This could help us identify potential issues before we even start cloning.&lt;/li>
+&lt;li>&lt;strong>Better design tools&lt;/strong>: DNA design software could incorporate more sophisticated rules and predictive models, helping scientists create sequences that are more likely to work. Large language models still lag quite a bit behind humans on answering questions on cloning related tasks (&lt;a href="https://arxiv.org/abs/2407.10362">LAB-bench&lt;/a>), but I wouldn’t be surprised if that changes soon.&lt;/li>
+&lt;li>&lt;strong>Interpretable intermediate states&lt;/strong>: If we could easily check the correctness of each step, debugging cycles could be shortened.&lt;/li>
+&lt;/ol>
+&lt;p>Because of how common it is, I think it is easy to think of cloning as being a procedure with certain success if you don’t mess up (and there are many ways to mess up). But cloning is in part an experiment to see whether a certain host organism will tolerate a certain plasmid.&lt;/p>
+&lt;p>And hey, if all else fails, there&amp;rsquo;s always that contract with a demon to consider.&lt;/p>
+&lt;h2 id="appendix">
+&lt;a href="#appendix" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Appendix
+&lt;/h2>
+&lt;p>Some other cloning-related odds and ends that may be of interest:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Your clonal colonies may not actually be clonal. See “&lt;a href="https://www.nature.com/articles/s41598-022-14598-9">High rates of plasmid cotransformation in E. coli overturn the clonality myth and reveal colony development&lt;/a>”&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Sam Rodriques on why cloning is hard to automate (&lt;a href="https://twitter.com/SGRodriques/status/1785855017137975801">tweet&lt;/a>):&lt;/p>
+&lt;blockquote>
+&lt;p>E.g. in cloning, everyone has a design workflow they prefer, but any individual plasmid will usually require some modification in the design process. E.g. maybe the sequence isn’t available on Addgene, maybe the restriction site you want to use is methylated, maybe there are repeats, etc. You can write a script to automate design of any individual plasmid (or maybe any individual backbone), but the same script only rarely works across many plasmids. Everything is an edge case.&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>DNA quantification is different from instrument to instrument, as much as &lt;a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0305650">several fold different&lt;/a>. Thanks to Niko McCarty for surfacing this paper.&lt;/p>
+&lt;figure>
+&lt;a data-fancybox="" href="fig3.png" data-caption="Qubit is quite different compared to DeNovix and NanoDrop">
+&lt;img src="fig3.png" data-src="fig3.png" class="lazyload" alt="" >&lt;/a>
+&lt;figcaption style="text-align:left">
+Qubit is quite different compared to DeNovix and NanoDrop
+&lt;/figcaption>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="acknowledgements">
+&lt;a href="#acknowledgements" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Acknowledgements
+&lt;/h2>
+&lt;p>Thank you to Laura Quinto and Chase Armer for looking over drafts of this piece and providing feedback.&lt;/p>
+&lt;h2 id="other-similar-essays-i-enjoyed">
+&lt;a href="#other-similar-essays-i-enjoyed" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+&lt;strong>Other similar essays I enjoyed&lt;/strong>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://twitter.com/koeng101/status/1793123441882902798">Too much Tacit&lt;/a> (Keoni Gandall)&lt;/li>
+&lt;li>&lt;a href="https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html">Why is machine learning &amp;lsquo;hard&amp;rsquo;?&lt;/a> (S. Zayd Enam)&lt;/li>
+&lt;/ul></description></item><item><title>Leaf color change in 10,950 iNaturalist observations</title><link>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</link><pubDate>Thu, 09 Jan 2020 21:19:07 -0500</pubDate><guid>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</guid><description>
 &lt;figure>
 &lt;a data-fancybox="" href="process.jpg" data-caption="Process overview. Skip to process explanation">
 &lt;img src="process.jpg" data-src="process.jpg" class="lazyload" alt="" >&lt;/a>
