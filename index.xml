@@ -1,34 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Etowah Adams</title><link>https://etowahadams.github.io/</link><description>Recent content on Etowah Adams</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://etowahadams.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Reclassifying Het Groups as Ligands in Schrödinger Maestro</title><link>https://etowahadams.github.io/post/2020-08-15-het-to-ligand/</link><pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate><guid>https://etowahadams.github.io/post/2020-08-15-het-to-ligand/</guid><description>
-&lt;p>&lt;em>I did some ligand docking this summer using Schrödinger. I couldn&amp;rsquo;t find instructions on how to reclassify a het group as a ligand in Maestro, so had to figure it out. What I did is documented here.&lt;/em>&lt;/p>
-&lt;p>When you import a structure of a protein bound to a ligand from &lt;a href="https://www.rcsb.org/">PDB&lt;/a>, often the ligand isn&amp;rsquo;t recognized as a ligand by &lt;a href="https://www.schrodinger.com/maestro">Maestro&lt;/a>, Schrödinger&amp;rsquo;s ligand docking software. This is problematic because then there&amp;rsquo;s no ligand to select when generating a grid for ligand docking. Here are instructions on how to turn the het group into a ligand. I&amp;rsquo;m running Schrödinger 2020-2 on Windows 10.&lt;/p>
-&lt;ol>
-&lt;li>Find the het group in the structure hierarchy and extract it to a new entry
-&lt;figure>
-&lt;a data-fancybox="" href="select-het-group.jpeg" >
-&lt;img src="select-het-group.jpeg" data-src="select-het-group.jpeg" class="lazyload" alt="" >&lt;/a>
-&lt;/figure>&lt;/li>
-&lt;li>You should see a new entry in the entry list. Select it and go to &lt;strong>Edit -&amp;gt; 2D Sketcher&lt;/strong>. Click on the &amp;ldquo;Save as New..&amp;rdquo; button at the bottom.
-&lt;figure>
-&lt;a data-fancybox="" href="save-as-new.jpeg" >
-&lt;img src="save-as-new.jpeg" data-src="save-as-new.jpeg" class="lazyload" alt="" >&lt;/a>
-&lt;/figure>
-As long the new stucture is under 130 atoms, it should be listed as a ligand now.
-&lt;figure>
-&lt;a data-fancybox="" href="new-structure.jpeg" >
-&lt;img src="new-structure.jpeg" data-src="new-structure.jpeg" class="lazyload" alt="" >&lt;/a>
-&lt;/figure>&lt;/li>
-&lt;li>Select the new (ligand) stucture and the full protein structure in your workspace. Right click and merge them together.
-&lt;figure>
-&lt;a data-fancybox="" href="select-both.jpeg" >
-&lt;img src="select-both.jpeg" data-src="select-both.jpeg" class="lazyload" alt="" >&lt;/a>
-&lt;/figure>&lt;/li>
-&lt;li>Select the merged structure. You should see your het group listed as a ligand now.
-&lt;figure>
-&lt;a data-fancybox="" href="merged.jpeg" >
-&lt;img src="merged.jpeg" data-src="merged.jpeg" class="lazyload" alt="" >&lt;/a>
-&lt;/figure>&lt;/li>
-&lt;/ol>
-&lt;p>One of the potential downsides of this approach is that the exact conformation of the ligand is not preserved. This does not impact the grid generation, but if you want to compare the docked ligand to the original ligand, make sure that you&amp;rsquo;re comparing it to the ligand that was not extracted and merged. If you want to preserve the exact conformation, I recommend editing the PDB file of the extracted ligand.&lt;/p></description></item><item><title>Leaf color change in 10,950 iNaturalist observations</title><link>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</link><pubDate>Thu, 09 Jan 2020 21:19:07 -0500</pubDate><guid>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Etowah Adams</title><link>https://etowahadams.github.io/</link><description>Recent content on Etowah Adams</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 09 Jan 2020 21:19:07 -0500</lastBuildDate><atom:link href="https://etowahadams.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Leaf color change in 10,950 iNaturalist observations</title><link>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</link><pubDate>Thu, 09 Jan 2020 21:19:07 -0500</pubDate><guid>https://etowahadams.github.io/post/2020-01-09-maple-red-leaf/</guid><description>
 &lt;figure>
 &lt;a data-fancybox="" href="process.jpg" data-caption="Process overview. Skip to process explanation">
 &lt;img src="process.jpg" data-src="process.jpg" class="lazyload" alt="" >&lt;/a>
