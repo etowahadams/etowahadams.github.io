@@ -1,6 +1,6 @@
 ---
 title: "Molecular cloning, or why some biologists become superstitious"
-date: 2024-07-09T08:19:07-05:00
+date: 2024-07-17T08:19:07-05:00
 draft: false
 description: "Molecular cloning is a ubiquitous and essential molecular biology technique, yet it’s the bane of many a scientist's existence. Why does cloning make biologists contemplate career changes? And does it have to be this way?"
 categories: 
