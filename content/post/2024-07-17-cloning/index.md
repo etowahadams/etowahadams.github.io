@@ -1,6 +1,7 @@
 ---
 title: "Molecular cloning, or why some biologists become superstitious"
 date: 2024-07-16T08:19:07-05:00
+lastmod: 2024-08-08T09:50:00-05:00
 draft: false
 description: "Molecular cloning is a ubiquitous and essential molecular biology technique, yet it’s the bane of many a scientist's existence. Why does cloning make biologists contemplate career changes? And does it have to be this way?"
 categories: 
@@ -95,6 +96,8 @@ And hey, if all else fails, there's always that contract with a demon to conside
 Some other cloning-related odds and ends that may be of interest: 
 
 - Your clonal colonies may not actually be clonal. See “[High rates of plasmid cotransformation in E. coli overturn the clonality myth and reveal colony development](https://www.nature.com/articles/s41598-022-14598-9)”
+- Of 301 plasmids tested in E. coli ~20% caused some level of growth defect ([Radde et al. 2024](https://www.nature.com/articles/s41467-024-50639-9))
+- Analysis of expression of 29 glycolytic proteins in yeast found they can be overexpressed until they form 15% of the total proteins in a yeast cell ([Eguchi et al. 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6086662/))
 - Sam Rodriques on why cloning is hard to automate ([tweet](https://twitter.com/SGRodriques/status/1785855017137975801)):
     
     > E.g. in cloning, everyone has a design workflow they prefer, but any individual plasmid will usually require some modification in the design process. E.g. maybe the sequence isn’t available on Addgene, maybe the restriction site you want to use is methylated, maybe there are repeats, etc. You can write a script to automate design of any individual plasmid (or maybe any individual backbone), but the same script only rarely works across many plasmids. Everything is an edge case.
@@ -108,7 +111,7 @@ Some other cloning-related odds and ends that may be of interest:
 
 Thank you to Laura Quinto and Chase Armer for looking over drafts of this piece and providing feedback.
 
-## **Other similar essays I enjoyed**
+## Other similar essays I enjoyed
 
 - [Too much Tacit](https://twitter.com/koeng101/status/1793123441882902798) (Keoni Gandall)
 - [Why is machine learning 'hard'?](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html) (S. Zayd Enam)
