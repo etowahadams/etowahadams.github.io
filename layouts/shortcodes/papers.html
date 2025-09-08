@@ -31,23 +31,24 @@
             <div class="paper-thumb placeholder" aria-hidden="true"></div>
           {{- end -}}
           <div class="paper-body">
-            <h5 class="paper-title">{{ .title }}</h5>
-            {{- with .venue -}}<div class="paper-venue">{{ . }}</div>{{- end -}}
+            <div class="paper-title"><b>{{ .title }}</b></div>
 
             {{- with .authors -}}
               {{- $formatted := slice -}}
               {{- range . -}}
                 {{- $a := . -}}
                 {{- if and $me (in $a $me) -}}
-                  {{- $a = printf "<strong>%s</strong>" $a | safeHTML -}}
+                  {{- $a = printf "<u>%s</u>" $a | safeHTML -}}
                 {{- end -}}
                 {{- $formatted = $formatted | append $a -}}
               {{- end -}}
               <div class="paper-authors">{{ delimit $formatted ", " | safeHTML }}</div>
             {{- end -}}
 
+            {{- with .venue -}}<div class="paper-venue">{{ . }}</div>{{- end -}}
+
             {{- with .comment -}}
-              <div class="paper-comment"><em>{{ . }}</em></div>
+              <div class="paper-comment">{{ . }}</div>
             {{- end -}}
 
             <div class="paper-links">

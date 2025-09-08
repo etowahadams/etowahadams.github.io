@@ -1,6 +1,6 @@
 "2025":
   - title: "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models"
-    venue: "International Conference on Machine Learning, 2025 (Spotlight)"
+    venue: "International Conference on Machine Learning (ICML), 2025 (Spotlight)"
     authors: ["Etowah Adams*", "Liam Bai*", "Minji Lee", "Yiyang Yu", "Mohammed AlQuraishi"]
     thumbnail: "/papers/interprot.png"
     comment: "First paper of my PhD! Using sparse autoencoders, we try to figure out what protein langauge models have learned about proteins."
