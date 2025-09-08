@@ -1,0 +1,82 @@
+<!-- File: layouts/shortcodes/papers.html -->
+{{- $src := .Get "src" | default "papers" -}}
+{{- $file := .Get "file" -}}
+{{- $me := .Get "me" | default .Site.Params.me -}}
+{{- $data := dict -}}
+{{- if $file -}}
+  {{- $raw := readFile $file -}}
+  {{- $data = $raw | transform.Unmarshal -}}
+{{- else -}}
+  {{- $data = (index .Site.Data $src) -}}
+{{- end -}}
+
+{{- if not $data -}}
+  <p class="text-muted">No papers found in <code>data/{{ $src }}.{yaml,toml,json}</code>.</p>
+{{- else -}}
+  <div class="papers">
+    {{- /* Collect and sort year keys (strings) by numeric value desc */ -}}
+    {{- $years := slice -}}
+    {{- range $k, $_ := $data -}}
+      {{- $years = $years | append (dict "label" $k "num" (int $k)) -}}
+    {{- end -}}
+    {{- range sort $years "num" "desc" -}}
+      {{- $y := .label -}}
+      <h2 class="papers-year-heading">{{ $y }}</h2>
+      {{- range index $data $y -}}
+        <article class="paper">
+          {{- $thumb := .thumbnail -}}
+          {{- if $thumb -}}
+            <img src="{{ $thumb | absURL }}" alt="{{ .title }} thumbnail" class="paper-thumb" loading="lazy"/>
+          {{- else -}}
+            <div class="paper-thumb placeholder" aria-hidden="true"></div>
+          {{- end -}}
+          <div class="paper-body">
+            <h5 class="paper-title">{{ .title }}</h5>
+            {{- with .venue -}}<div class="paper-venue">{{ . }}</div>{{- end -}}
+
+            {{- with .authors -}}
+              {{- $formatted := slice -}}
+              {{- range . -}}
+                {{- $a := . -}}
+                {{- if and $me (in $a $me) -}}
+                  {{- $a = printf "<strong>%s</strong>" $a | safeHTML -}}
+                {{- end -}}
+                {{- $formatted = $formatted | append $a -}}
+              {{- end -}}
+              <div class="paper-authors">{{ delimit $formatted ", " | safeHTML }}</div>
+            {{- end -}}
+
+            {{- with .comment -}}
+              <div class="paper-comment"><em>{{ . }}</em></div>
+            {{- end -}}
+
+            <div class="paper-links">
+            {{- with .links -}}
+                {{- $links := . -}}  {{/* capture the links map */}}
+                {{- $order := slice "paper" "project" "code" "video" "slides" "bibtex" "poster" -}}
+
+                {{- /* Ordered keys first */ -}}
+                {{- range $order -}}
+                {{- $k := . -}}
+                {{- with (index $links $k) -}}
+                    <a class="paper-link" href="{{ . }}" target="_blank" rel="noopener">{{ title $k }}</a>
+                {{- end -}}
+                {{- end -}}
+
+                {{- /* Any remaining custom keys */ -}}
+                {{- range $k, $v := $links -}}
+                {{- if not (in $order $k) -}}
+                    <a class="paper-link" href="{{ $v }}" target="_blank" rel="noopener">{{ title $k }}</a>
+                {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            {{- with .award -}}<span class="paper-award">{{ . }}</span>{{- end -}}
+            </div>
+            
+
+          </div>
+        </article>
+      {{- end -}}
+    {{- end -}}
+  </div>
+{{- end -}}
