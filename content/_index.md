@@ -1,5 +1,5 @@
 
-Hello! I'm Etowah, a second year PhD student in Systems Biology at Columbia studying machine learning and biology. I am advised by Prof. [Mohammed AlQurasihi](https://www.aqlab.io/). In my research I seek to build increasingly complete (re: multi-modal, temporal, molecular) representations of biology to understand and engineer biology. 
+Hello! I'm Etowah, a second year PhD student in Systems Biology at Columbia studying machine learning and biology. I am advised by Prof. [Mohammed AlQuraishi](https://www.aqlab.io/). In my research I seek to build increasingly complete (re: multi-modal, temporal, molecular) representations of biology to understand and engineer biology.
 
 {{< figure src="array.png" caption="No, not a Pollock painting. It's a DNA sequencing flow cell in action.">}} 
 
