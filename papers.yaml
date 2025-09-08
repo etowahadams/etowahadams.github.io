@@ -1,0 +1,29 @@
+"2025":
+  - title: "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models"
+    venue: "International Conference on Machine Learning, 2025 (Spotlight)"
+    authors: ["Etowah Adams*", "Liam Bai*", "Minji Lee", "Yiyang Yu", "Mohammed AlQuraishi"]
+    thumbnail: "/papers/interprot.png"
+    comment: "First paper of my PhD! Using sparse autoencoders, we try to figure out what protein langauge models have learned about proteins."
+    links:
+      paper: "https://openreview.net/forum?id=zdOGBRQEbz"
+      project: "https://interprot.com"
+      code: "https://github.com/etowahadams/interprot"
+      anthropic coverage: "https://transformer-circuits.pub/2025/july-update/index.html#bio"
+      tweet thread: "https://x.com/etowah0/status/1888977417127055413"
+  - title: "Genome modeling and design across all domains of life with Evo 2"
+    venue: "Preprint"
+    authors: ["Garyk Brixi*", "Matthew G. Durrant*", "Jerome Ku*", "Michael Poli*", "Greg Brockman", "...", "Etowah Adams", "...", "Dave P. Burke", "Hani Goodarzi", "Patrick D. Hsu", "Brian L. Hie" ]
+    thumbnail: "/papers/evo2.png"
+    comment: "I led engineering of Evo Designer. Huge thanks to Arc Insitute and Patrick Collison for the opportunity to contribute!"
+    links:
+      paper: "https://arcinstitute.org/manuscripts/Evo2"
+      project: "https://arcinstitute.org/tools/evo"
+      media: "https://www.nature.com/articles/d41586-025-00531-3"
+  - title: "Precision multiplexed base editing in human cells using Cas12a-derived base editors"
+    venue: "Nature Communications"
+    authors: ["Anabel Schweitzer", "Etowah Adams", "Michael Nguyen", "Monkol Lek", "Farren J. Isaacs"]
+    thumbnail: "/papers/anabel.png"
+    comment: "Paper from my undergrad. I developed analysis tools for base editing outcome sequencing data."
+    links:
+      paper: "https://www.nature.com/articles/s41467-025-59653-x"
+      code: "https://github.com/etowahadams/EditRBatch"
